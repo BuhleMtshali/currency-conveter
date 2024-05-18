@@ -10,3 +10,12 @@ function convertNow(event) {
 
 let buttonConvertElement = document.querySelector("#convert-button");
 buttonConvertElement.addEventListener("click", convertNow);
+
+function resetNow(event) {
+  event.preventDefault();
+  inputConvertElement.value = ""; //this will bring back the input placeholder
+  inputRandElement.value = "";
+}
+
+let resetButtonElement = document.querySelector("#reset-button");
+resetButtonElement.addEventListener("click", resetNow);
