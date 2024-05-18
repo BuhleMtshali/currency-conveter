@@ -11,6 +11,16 @@ function convertNow(event) {
 let buttonConvertElement = document.querySelector("#convert-button");
 buttonConvertElement.addEventListener("click", convertNow);
 
+function convertRand(event) {
+  event.preventDefault();
+  let randValue = parseFloat(inputRandElement.value);
+  let dollarValue = randValue / 18.33;
+  inputConvertElement.value = Math.floor(dollarValue);
+}
+
+let buttonConvertRandElement = document.querySelector("#convertToRand-button");
+buttonConvertRandElement.addEventListener("click", convertRand);
+
 function resetNow(event) {
   event.preventDefault();
   inputConvertElement.value = ""; //this will bring back the input placeholder

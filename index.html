@@ -15,7 +15,7 @@
   <body>
     <div class="container">
       <h1>Currency Converter Scale</h1>
-      <h2>Dollar to Rand</h2>
+      <h2>Dollar <span class="red">&</span> Rand</h2>
       <input
         type="text"
         id="dollar-input"
@@ -24,11 +24,18 @@
       <input
         type="text"
         id="rand-input"
-        placeholder="Rand value will appear here..."
+        placeholder="Enter the Rand value..."
       />
       <div class="buttons">
-        <button id="convert-button">Convert</button>
-        <button id="reset-button">Reset</button>
+        <div>
+          <button id="convert-button">Convert Dollar to Rand</button>
+        </div>
+        <div>
+          <button id="convertToRand-button">Convert Rand to Dollar</button>
+        </div>
+        <div>
+          <button id="reset-button">Reset</button>
+        </div>
       </div>
     </div>
     <script src="index.js"></script>

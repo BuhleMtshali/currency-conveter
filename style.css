@@ -1,5 +1,5 @@
 body {
-  background-color: #2b2d42;
+  background-color: #6c757d;
 }
 
 .container {
@@ -24,6 +24,9 @@ h2 {
   font-size: 30px;
   color: #edf2f4;
 }
+.red {
+  color: #d90429;
+}
 input {
   display: block;
   margin-left: auto;
@@ -42,8 +45,8 @@ input[type="text"]:focus {
   outline: none;
 }
 .buttons {
-  display: flex;
-  justify-content: center;
+  display: block;
+  text-align: center;
 }
 button {
   padding: 15px 20px;
@@ -55,8 +58,12 @@ button {
   color: #edf2f4;
   font-family: cursive;
   cursor: pointer;
+  font-weight: bold;
 }
 button:hover {
   background-color: #edf2f4;
   color: #d90429;
+}
+#reset-button {
+  padding: 15px 45px;
 }
