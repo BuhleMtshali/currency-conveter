@@ -32,6 +32,7 @@ input {
   text-align: center;
   font-weight: bold;
   font-family: cursive;
+  border-radius: 20px;
 }
 input[type="text"]:focus {
   outline: none;
@@ -41,12 +42,17 @@ input[type="text"]:focus {
   justify-content: center;
 }
 button {
-  padding: 10px 15px;
-  margin: 10px;
+  padding: 15px 20px;
+  margin: 20px;
   font-size: 18px;
   border: none;
   border-radius: 5px;
   background-color: #d90429;
   color: #edf2f4;
   font-family: cursive;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #edf2f4;
+  color: #d90429;
 }
